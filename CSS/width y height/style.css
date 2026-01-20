@@ -1,0 +1,16 @@
+div{
+    background: red;
+    width: 400px;
+    height: 200px;
+}
+h1{
+    background: blue;
+    width: 50%;
+    height: 100px;
+}
+input{
+    width: 70%;
+}
+form{
+    width: 200px;
+}

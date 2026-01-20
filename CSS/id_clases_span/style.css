@@ -1,0 +1,16 @@
+h2{
+    color:aqua;
+    background-color: black;
+}
+span{
+    color: brown;
+}
+.faltante{
+    color: red;
+}
+li{
+    color: blue;
+}
+#ingrediente-secreto{
+    color:blueviolet;
+}

@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+div{
+    font-family: sans-serif;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.px{
+    margin: 20px;
+    background: rgb(90, 80, 120);
+}
+.cm{
+    margin: 1cm;
+    background: hsl(240, 100%, 30%);
+}
+.mm{
+    margin: 15mm;
+    background: #f0a;
+}

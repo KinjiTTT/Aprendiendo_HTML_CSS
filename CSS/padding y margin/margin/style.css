@@ -1,0 +1,49 @@
+.formulario{
+    background-color: black;
+    padding: 27px 48px;
+
+}
+.formulario_input{
+    padding: 5px;
+    margin: 20px;
+    width: 90%;
+}
+.formulario_submit{
+    width: 50%;
+    margin-left: 25%;
+    padding: 15px 0;
+    background-color: darkblue;
+    color: red;
+    font-size: bolder;
+    font-family: 'Times New Roman';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.box1{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    margin: 30px;
+}
+.box2{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin: 10px 110px;
+}
+.box3{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+.box4{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    margin: 30px 20px 40px 70px
+}
