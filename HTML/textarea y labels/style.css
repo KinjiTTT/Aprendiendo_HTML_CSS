@@ -25,7 +25,7 @@ h2{
 .form_input{
     padding: 6px 20px;
 }
-input, textarea{
+input, textarea, select{
     width: 100%;
     box-sizing: border-box;
     padding: 6px 8px;
@@ -35,6 +35,9 @@ input, textarea{
     box-shadow: 0px 0px 15px #0003;
     background-color: transparent;
     color: #ddd;
+}
+option{
+    background-color: #222;
 }
 textarea{
     min-width: 100%;
