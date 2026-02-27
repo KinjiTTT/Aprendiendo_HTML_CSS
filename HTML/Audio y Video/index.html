@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio y Video</title>
+</head>
+<body>
+    <h1>Video de Ejemplo:</h1>
+    <video autoplay muted controls loop src="video.mp4">El video no es compatible con su navegador :/</video>
+    <track src="caption.vtt" default kind="subtitles" srclang="es" label="Español (Latinoamerica)"></track> <!--Esto si tenes subtitulos-->
+
+    <h2>Audio de Ejemplo</h2>
+    <audio controls src="audio.mp3">audio no soportado (por si no aparezca)</audio>
+
+    <table>
+        <thead>
+            <tr>
+                <td>VIDEO</td>
+                <td>AUDIO</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><video autoplay muted src="video.mp4"></video></td>
+                <td><audio controls src="audio.mp3"></audio></td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+video{
+    width: 720px;
+    height: 360px;
+    background: black;
+}
+audio{
+
+}
+table{
+    border: 2px solid #80f;
+    padding: 5px;
+    text-align: center;
+}
+td{
+    border: 1px solid #000;
+    padding: 10px;
+}
