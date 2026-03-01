@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudoclases</title>
+</head>
+<body>
+    <h1>PSEUDOCLASES</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, voluptatibus! Possimus asperiores, placeat commodi adipisci dignissimos enim deserunt perspiciatis quidem et. Corporis, beatae ipsam. Earum est odit qui minima quidem.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit minus nemo vero quasi consequuntur ea laudantium dolor cupiditate saepe labore, obcaecati, in expedita quibusdam amet reprehenderit est soluta modi.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quos corporis reiciendis, velit et aspernatur officia eum rerum atque fugiat vero magnam dolorum dolorem, dolores dicta tempora unde possimus nemo.
+    </p>
+    <p>
+        ;lksajf;sadjf;aslkdfj;sajfa;sldjf;saldkfja;sldjfa;sldkfja;lsjfd
+    </p>
+    <p>
+        ;lsajfpoia jfoijfpoiajvpoia dnoidhvpsajsaoifj poajfianfoiaewnf;lsdf;alksdf;mainasdijglijkiller
+    </p>
+    <h2>A continuacion veras una lista desordenada de cosas</h2>
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li class="excluir">elemento 4</li>
+        <li>elemento 5</li>
+        <li>elemento 6</li>
+        <li>elemento 7</li>
+        <li>elemento 8</li>
+        <li>elemento 9</li>
+        <li class="excluir">elemento 10</li>
+    </ul>
+    <ul class="particular">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>elemento 5</li>
+        <li>elemento 6</li>
+        <li>elemento 7</li>
+        <li>elemento 8</li>
+        <li>elemento 9</li>
+        <li>elemento 10</li>
+        <li>elemento 11</li>
+        <li>elemento 12</li>
+    </ul>
+    <h3>La siguiente lista es igual a la anterior con la diferencia del "Obstaculo", para apreciar como afecta</h3>
+    <ul class="particular">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li>elemento 4</li>
+        <li>elemento 5</li>
+        <span>----------OBSTACULO----------</span>
+        <li>elemento 6</li>
+        <li>elemento 7</li>
+        <li>elemento 8</li>
+        <li>elemento 9</li>
+        <li>elemento 10</li>
+        <li>elemento 11</li>
+        <li>elemento 12</li>
+    </ul>
+    <h3>Lista INVISIBLE (estoy siendo alterado por un "h3:has(+p)")</h3>
+    <p>Aqui abajo hay elementos invisibles por una condicion de CSS</p>
+    <ul class="invisible">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+        <li class="visible">elemento 4</li>
+        <li>elemento 5</li>
+        <li>elemento 6</li>
+        <li>elemento 7</li>
+        <li>elemento 8</li>
+        <li class="visible">elemento 9</li>
+        <li>elemento 10</li>
+    </ul>
+    <div>HAY BORDES</div> <!--SI ESTA VACIO, NO HAY BORDE, SI TIENE CONTENIDO (incluso espacios) ADQUIERE LOS BORDES DEL ESTILO-->
+    <h2>Uno que otro Input</h2>
+    <form>
+        <div>
+            <input type="checkbox">
+        </div>
+        
+        <label for="email">Correo Electronico</label>
+        <input type="email" placeholder="email@gmail.com" id="email">
+        <label>Corre de Recuperacion
+            <input type="email" placeholder="recuperacion@gmail.com">
+        </label>
+        <button>Venite encima</button>
+    </form>
+    <a href="https://youtube.com">VAMOS PA' YOUTUBE</a>
+    <a href="https://youtube.com?">Yutu</a>
+    <a href="https://google.com">GOOGLE sin visitar (no tocar para comparar con los enlaces visitados)</a>
+    <h2>
+        Parrafos
+    </h2>
+    <section>
+            <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsam quasi magnam illo perferendis commodi incidunt fugiat necessitatibus nesciunt eligendi aut vel et quis maiores, velit aliquam id minus? A!</p>
+            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aut debitis odit sequi veritatis quod sed eligendi cum illum itaque cupiditate voluptate quaerat quisquam assumenda vel, vero cumque reiciendis repellendus!</p>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae corrupti nam, dolor sit in expedita iste illo nostrum inventore, eum distinctio. Culpa magni quaerat eos eligendi aliquam et laudantium.</p>
+            <p id="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam natus numquam cumque quisquam aperiam temporibus maxime cum placeat, tenetur illum perferendis eaque voluptate maiores repellat esse optio officiis atque?</p>
+            <p class="p5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quam natus numquam cumque quisquam aperiam temporibus maxime cum placeat, tenetur illum perferendis eaque voluptate maiores repellat esse optio officiis atque?</p>
+    </section>
+    
+    <table>
+        <tr>
+            <th>TITULO 1</th>
+            <th>TITULO 2</th>
+            <th>TITULO 3</th>
+            <th class="cuarto">TITULO 4</th>
+            <th>TITULO 5</th>
+            <th>TITULO 6</th>
+            <th>TITULO 7</th>
+            <th>TITULO 8</th>
+            <th>TITULO 9</th>
+            <th>TITULO 10</th>
+            <th>TITULO 11</th>
+            <th>TITULO 12</th>
+        </tr>
+        <tr>
+            <td>dato 1</td>
+            <td>dato 2</td>
+            <td>dato 3</td>
+            <td>dato 4</td>
+            <td>dato 5</td>
+            <td>dato 6</td>
+            <td>dato 7</td>
+            <td>dato 8</td>
+            <td>dato 9</td>
+            <td>dato 10</td>
+            <td>dato 11</td>
+            <td>dato 12</td>
+        </tr>
+        <tr>
+            <td>datazo 1</td>
+            <td>datazo 2</td>
+            <td>datazo 3</td>
+            <td>datazo 4</td>
+            <td>datazo 5</td>
+            <td>datazo 6</td>
+            <td>datazo 7</td>
+            <td>datazo 8</td>
+            <td>datazo 9</td>
+            <td>datazo 10</td>
+            <td>datazo 11</td>
+            <td>datazo 12</td>
+        </tr>
+        <tr>
+            <td>datex 1</td>
+            <td>datex 2</td>
+            <td>datex 3</td>
+            <td>datex 4</td>
+            <td>datex 5</td>
+            <td>datex 6</td>
+            <td>datex 7</td>
+            <td>datex 8</td>
+            <td>datex 9</td>
+            <td>datex 10</td>
+            <td>datex 11</td>
+            <td>datex 12</td>
+        </tr>
+    </table>
+</body>
+</html>

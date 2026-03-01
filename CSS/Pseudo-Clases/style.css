@@ -1,0 +1,138 @@
+/* ":hover" da estilo al pasar el mouse encima del elemento*/
+button:hover{
+    background-color: black;
+    color: white;
+}
+h1:hover{
+    color: #0b6;
+}
+/* ":active" da estilo al mantener click(izquierdo o derecho) sobre un elemento*/
+button:active{
+    background-color: green;
+    color: white;
+}
+h1:active{
+    color: #f50;
+    background-color: #aaa;
+}
+/* ":first-child" da estilo al primer elemento de un conjunto de elementos*/
+ul li:first-child{
+    font-size: 900;
+    color: #f09;
+}
+/* ":first-child" da estilo al ultimo elemento de un conjunto de elementos*/
+ul li:last-child{
+    font-size: 100;
+    color: #90f;
+}
+/* ":nth-child" le da estilo a un elemento puntual de un conjunto de elementos*/
+ul li:nth-child(7){
+    font-family: sans-serif;
+    color: rgb(7, 227, 227);
+    background-color: #700;
+    width: 80px;
+}
+/* Si le damos un parametro "n" dara estilo cada "n" elementos*/
+.particular li:nth-child(3n){
+    color: #afa;
+    background-color: #aaa;
+}
+/*En este caso no es funcional del todo, pues toma como primer elemento a el h1 que esta en la misma jerarquia de elementos que p, siendo el numero 2 el primer p realmente*/
+p:nth-child(2){
+    background-color: #700;
+}
+/*":nth-of-type" da estilo teniendo en cuenta solo el tipo de elemento al cual nos estamos refiriendo, corrigiendo el problema que teniamos con nth-child*/
+p:nth-of-type(2){
+    color: #f50;
+    background-color: #f09;
+}
+/*":not(.clase)" estiliza todos los elementos EXCEPTO el que este dentro del not*/
+.invisible li:not(.visible){
+    color: #fff;
+    background: #fff;
+}
+
+div{
+    border: 3px solid #111;
+}
+/*Cuando el div este vacio (incluso sin espacios), ":empty" sera lo que le dara estilo*/
+div:empty{
+    border: none;
+}
+
+input[type="checkbox"]{
+    width: 100%;
+    margin: 0;
+}
+/*":checked" le da estilo al input cuando esta en estado checkeado, si se desmarca vuelve al estilo sin el checked*/
+input[type="checkbox"]:checked{
+    margin: 20px;
+    height: 30px;
+}
+/*Cuando un enlace aun no ha sido visitado, toma el estilo de ":link"*/
+a:link{
+    color: #0f0;
+}
+/*Cuando un enlace ya ha sido visitado, toma el estilo de ":visited"*/
+a:visited{
+    color: #f0f;
+}
+
+/* ":is" selecciona elementos puntuales que sean hijos de un elemento, ES IMPORTANTE darle un espacio entre el elemento padre y el pues es una pseudoclase que funciona por si sola como un elemento mas, que al estar separado de esta manera es el hijo */
+section :is(.p1, .p3, #p4){
+    background-color: #821;
+    color: #ddd;
+}
+/* ":where" es exactamente igual a ":is", con la diferencia de que le da menos especificidad, como si se tratara de un elemento sin clase ni id, en cambio ":is" mantiene la especificidad mas alta entre las los elementos */
+section :where(.p1, .p2, .p5){
+    background-color: #0f0;
+    color: black;
+}
+
+/* ":has" aplica el estilo en caso de que dentro del elemento exista lo que haya dentro del parentesis, en este caso la clase "cuarto", aplicara los cambios al tr(fila) donde esta clase exista*/
+tr:has(.cuarto){
+    background-color: #000;
+}
+
+h3:has(+p){
+    font-family: cursive;
+    background-color: #90f;
+    color: #cb0;
+    text-align: right;
+}
+
+input:invalid{
+    color: #f00;
+}
+input:valid{
+    color:#0f0;
+}
+/* ":has" tambien se puede utilizar de esta manera, cuando una condicion dentro se cumple o no*/
+label:has(input:invalid){
+    color: #f00;
+    font-size: 900;
+}
+label:has(input:valid){
+    color: #0a0;
+    font-size: 900;
+}
+/* En este caso uso el signo + porque en html puse los labels vinculados por id, y el "has" solo relacion padres, hijos o hermanos, no relaciones por atributos como el id*/
+label:has(+input:invalid){
+    font-size: 900;
+    color: #f07;
+}
+label:has(+input:valid){
+    font-size: 900;
+    color: #00f;
+}
+
+
+table{
+    text-align: center;
+    border: 2px solid #024;
+    margin: auto;
+}
+td, th{
+    border: 1px solid #024;
+    font-size: 12px;
+}

@@ -1,0 +1,77 @@
+/*-------------------------------- SELECTOR DE ATRIBUTO --------------------------------*/
+
+/* Para darle estilo a un elemento por atributo se hace con los corchetes y poniendo el atributo completo*/
+img[src="PasilloYPasto.JPG"]{
+    width: 100%;
+}
+/* Para darle estilo a un atributo que TERMINA con algo especifico (como el formato del archivo) se utiliza el signo "$" */
+img[src$="png"]{
+    width: 60%;
+}
+/* Para darle estilo a un atributo que EMPIEZA con algo especifico (nombres, iniciales etc) se utiliza el signo "^" */
+img[src^="Candelabro"]{
+    width: 200px;
+    height: 150px;
+}
+
+/*-------------------------------- SELECTOR DESCENDIENTE/HIJO DIRECTO --------------------------------*/
+
+/* Para darle estilo a un elemento que esta dentro de otro elemento (un elemento hijo/nieto/etc mientras este dentro de un elemento padre)
+Debemos ponerlo en orden descendente desde el padre hasta el hijo que queremos estilizar, donde se cumpla esa
+condicion se establecera el estilo */
+ul li{
+    color: red;
+}
+/* "a" no es hijo directo de "ul", pero funciona al estar dentro de ese elemento */
+ul a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/*-------------------------------- SELECTOR DE HIJO DIRECTO --------------------------------*/
+
+/* Si queremos estilizar SOLO a un Hijo directo de un Padre, tenemos que usar ">" */
+ul > p{
+    color: gray;
+    font-style: italic;
+}
+/* Esto tiene prioridad sobre la relacion de HIJO DIRECTO, osea que reemplaza a los estilos aplicados con la relacion ">"*/
+/*
+    ul p{
+        color: blue;
+    }
+*/
+
+/*-------------------------------- SELECTOR ADYACENTE --------------------------------*/
+/* Para darle estilo a un elemento que le sigue a otro elemento (un elemento "hermano") se hace con el signo +, poniendo
+primero al elemento que va antes y despues al elemento que sera estilizado
+obs: esto solo le da estilo al hermano directo despues del elemento citado*/
+h1 + p{
+    font-size: 17px;
+    font-family: monospace;
+    color: blue;
+}
+h2 + p + p{
+    background-color: green;
+    color: red;
+
+}
+/* Para darle estilo a TODOS los elementos hermanos siguientes a un elemento, se utiliza el simbolo "~"
+Esto estilizara incluso si hay elementos entre si, solo importa que este despues del elemento del principio */
+h1 ~ p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:12px;
+    background: black;
+    color: forestgreen;
+}
+
+/*-------------------------------- SELECTOR DE MULTIPLES ELEMENTOS --------------------------------*/
+h2, div{
+    width: 20%;
+    font-size: 30px;
+    background-color: crimson;
+    margin: auto;
+    text-align: center;
+
+
+}

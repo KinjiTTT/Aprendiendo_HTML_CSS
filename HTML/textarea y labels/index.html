@@ -14,12 +14,12 @@
             <legend>Informacion Basica</legend>
             <div class="form_input">
                 <label for="nombre">Nombre Completo</label> <!--Los labels se pueden poner aparte y enlazarlo a otro elemento a traves del id del elemento y poner ese id en el for-->
-                <input type="text" placeholder="Fernando Toledo" id="nombre">
+                <input type="text" placeholder="Fernando Toledo" id="nombre"> <!--Cuando hay un label vinculado a un input mediante id, este si es mencionado por las herramientas de accesibilidad, por lo que no resulta necesario un "aria-label"-->
             </div>
         
             <div class="form_input">
                 <label>Email
-                    <input type="email" placeholder="fernand@gmail.com">
+                    <input type="email" placeholder="fernand@gmail.com" aria-label="Introduzca su Email">  <!--Cuando el label solo rodea(por asi decir) al input, la parte de accesibilidad no nombra ese label, por lo que es necesario poner el "aria-label"-->
                 </label> <!--Tambien se pueden enlazar poniendo el elemento dentro del label, pero siempre estaran pegados a diferencia de la otra manera en la que si pueden estar en diferentes partes-->
             </div>
             <div class="form_input">
@@ -29,9 +29,9 @@
             </div>
         </fieldset>
         <!--SELECT & OPTION-->
-        <div class="form_input">
+        <div class="form_input"">
             <label>Tipo de Usuario
-                <select name="type-of-user">
+                <select name="type-of-user" aria-label="Seleccione tipo de Usuario">
                     <option value="user1">Opcion 1</option>
                     <option value="user2">Opcion 2</option>
                     <option value="user3">Opcion 3</option>
@@ -52,13 +52,12 @@
         <!--TEXTAREA-->
         <div class="form_input">
             <label for="mensaje">Mensaje</label>
-            <textarea rows="6" placeholder="Deja un mensaje..." id="mensaje"></textarea>
+            <textarea rows="6" placeholder="Deja un mensaje..." aria-label="Escriba su mensaje" id="mensaje"></textarea>
         </div>
         <div class="form_input">
             <label>Acepto los <a href="../enlaces avanzados/terms.html" target="_blank">terminos y condiciones</a>
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" class="checkbox" aria-label="Marque si esta de acuerdo con los terminos y condiciones">
             </label>
-        </div>
     </form>
 </body>
 </html>

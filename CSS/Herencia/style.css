@@ -1,0 +1,42 @@
+body {
+    font-family: monospace;
+    color: green;
+}
+
+/* Sobrescribimos */
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+/* Fuerza herencia */
+a {
+    color: inherit;
+}
+
+/* Probamos diferentes valores */
+h2 {
+    color: revert;   /* cambia esto por inherit, initial o revert para probar */
+}
+/*Valor por defecto*/
+h3{
+    color:initial;
+}
+
+/* Probamos propiedad que NO se hereda */
+div {
+    border: 3px solid black;
+}
+
+ul {
+    color:gray;
+    border: unset;  /* prueba unset, initial, inherit */
+}
+
+/* Probando revert */
+strong {
+    color: revert;
+}
